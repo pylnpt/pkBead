@@ -1,0 +1,281 @@
+<Products>:
+    BoxLayout:
+        md_bg_color: .95,.95,.95,.95
+        elevation: 1
+        LeftBar:
+            orientation: "vertical"
+            size_hint_x: .15
+            Label:
+                size_hint_y: .1
+                text: 'Fallout Drug Market'
+                font_size: 20
+                bold: True
+            Label:
+                size_hint_y: .1
+            BoxLayout:
+                size_hint_y: .4
+                orientation: "vertical"
+                HoverIconList:
+                    bold: True
+                    text: "Dashboard"
+                    on_press:
+                        root.manager.transition_direction = "left"
+                        root.manager.transition_duration = 1
+                        root.manager.current = "screen_one"
+                    LeftIcon:
+                        icon: "apps"
+                HoverIconList:
+                    text: "Orders"
+                    LeftIcon:
+                        icon: "basket-plus-outline"
+                HoverIconList:
+                    text: "Products"
+                    on_press:
+                        root.manager.transition_direction = "left"
+                        root.manager.transition_duration = 1
+                        root.manager.current = "screen_two"
+                    LeftIcon:
+                        icon: "gift-outline"
+                HoverIconList:
+                    text: "Reports"
+                    LeftIcon:
+                        icon: "finance"
+                HoverIconList:
+                    text: "Messages"
+                    LeftIcon:
+                        icon: "email"
+                HoverIconList:
+                    text: "Customers"
+                    on_click:
+                    LeftIcon:
+                        icon: "account-supervisor"
+            Label:
+                size_hint_y: .2
+            Label:
+                size_hint_y: .1
+                markup: True
+                text: '[size=20][b]  Fallout Drug Market[/b][/size]\n [size=15]All Rights Reserved[/size]'
+            Widget:
+                size_hint_y: .1
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: .85
+            MDBoxLayout:
+                padding: 20, 20, 20, 0
+                size_hint_y: .02
+                md_bg_color: (.07, .5, .5, .05)
+                Widget:
+                    size_hint_x: .8
+                Profile:
+                    size_hint_x: .07
+                MDLabel:
+                    markup: True
+                    size_hint_x: .13
+                    text: '[b]Peter Molnar[/b]\n Admin'
+            MDSeparator:
+            MDGridLayout:
+                adaptive_height: True
+                cols: 3
+                size_hint_y: .22
+
+                GridLayout:
+                    cols: 3
+                    spacing: 10
+                    padding: 5
+                    MDCard:
+                        size_hint: 1, 1
+                        radius: 10, 10
+                        elevation: -1
+                        padding: 15
+                        BoxLayout:
+                            size_hint_x: .7
+                            orientation: 'vertical'
+                            Label:
+                            MDLabel:
+                                markup: True
+                                text: "[b]Name[/b]: Superstimpack"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Price[/b]: $500/box"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Description[/b]:The advanced version of the stimpak boasts stronger healing drugs, delivered both via the syringe and a tributary ampule, both connected to a leather strap allowing to securely affix the contraption to the injection area."
+                            Label:
+                        BoxLayout:
+                            size_hint_x: .3
+                            Image:
+                                spacing: 10
+                                source: "superstimpack.png"
+                                pos_hint: {'y': .02}
+
+
+                GridLayout:
+                    cols: 3
+                    spacing: 10
+                    padding: 5
+                    MDCard:
+                        size_hint: 1, 1
+                        radius: 10, 10
+                        elevation: -1
+                        padding: 15
+                        BoxLayout:
+                            size_hint_x: .7
+                            orientation: 'vertical'
+                            Label:
+                            MDLabel:
+                                markup: True
+                                text: "[b]Name[/b]: Med-X"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Price[/b]: $300/box"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Description[/b]: Med-X is a clear injectable substance most commonly used as a powerful painkiller."
+                            Label:
+                        BoxLayout:
+                            size_hint_x: .3
+                            Image:
+                                spacing: 10
+                                source: "med-x.png"
+                                pos_hint: {'y': .02}
+
+                GridLayout:
+                    cols: 3
+                    spacing: 10
+                    padding: 5
+                    MDCard:
+                        size_hint: 1, 1
+                        radius: 10, 10
+                        elevation: -1
+                        padding: 15
+                        BoxLayout:
+                            size_hint_x: .7
+                            orientation: 'vertical'
+                            Label:
+                            MDLabel:
+                                markup: True
+                                text: "[b]Name[/b]: Psycho"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Price[/b]: $100/box"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Description[/b]: A military-grade psychosis-inducing amphetamine, Psycho is provided in a unique delivery system that mixes strange chemicals of military origin immediately prior to injection."
+                            Label:
+                        BoxLayout:
+                            size_hint_x: .3
+                            Image:
+                                spacing: 10
+                                source: "psycho.png"
+                                pos_hint: {'y': .02}
+                GridLayout:
+                    cols: 3
+                    spacing: 10
+                    padding: 5
+                    MDCard:
+                        size_hint: 1, 1
+                        radius: 10, 10
+                        elevation: -1
+                        padding: 15
+                        BoxLayout:
+                            size_hint_x: .7
+                            orientation: 'vertical'
+                            Label:
+                            MDLabel:
+                                markup: True
+                                text: "[b]Name[/b]: Mentat"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Price[/b]: $250/box"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Description[/b]: The active ingredient is a powerful nootropic that increases memory-related functions, and speeds other mental processes. Students and those in other fields requiring intensive thought would also take Mentats for its mental benefits, but Mentats would gain a reputation as being a drug for beatniks and armchair philosopher."
+                            Label:
+                        BoxLayout:
+                            size_hint_x: .3
+                            Image:
+                                spacing: 10
+                                source: "mentat.png"
+                                pos_hint: {'y': .02}
+
+
+                GridLayout:
+                    cols: 3
+                    spacing: 10
+                    padding: 5
+                    MDCard:
+                        size_hint: 1, 1
+                        radius: 10, 10
+                        elevation: -1
+                        padding: 15
+                        BoxLayout:
+                            size_hint_x: .7
+                            orientation: 'vertical'
+                            Label:
+                            MDLabel:
+                                markup: True
+                                text: "[b]Name[/b]: Jet"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Price[/b]: $200/box"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Description[/b]:The drug is a powerful hallucinogenic-meta-amphetamine that stimulates the central nervous system, triggering a rush of energy and strength primarily brought about by endorphins."
+                            Label:
+                        BoxLayout:
+                            size_hint_x: .3
+                            Image:
+                                spacing: 10
+                                source: "jet.png"
+                                pos_hint: {'y': .02}
+
+                GridLayout:
+                    cols: 3
+                    spacing: 10
+                    padding: 5
+                    MDCard:
+                        size_hint: 1, 1
+                        radius: 10, 10
+                        elevation: -1
+                        padding: 15
+                        BoxLayout:
+                            size_hint_x: .7
+                            orientation: 'vertical'
+                            Label:
+                            MDLabel:
+                                markup: True
+                                text: "[b]Name[/b]: Buffout"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Price[/b]: $100/box"
+                            MDLabel:
+                                markup: True
+                                text: "[b]Description[/b]: Buffout is a highly potent anabolic steroid that was popularized before the Great War by professional athletes and their clandestine use of the drug."
+                            Label:
+                        BoxLayout:
+                            size_hint_x: .3
+                            Image:
+                                spacing: 10
+                                source: "Buffout.png"
+                                pos_hint: {'y': .02}
+
+
+
+<LeftBar@BoxLayout>:
+    canvas.before:
+        Color:
+            rgba: (.06, .45, .45, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<LeftIcon@IconLeftWidget>:
+    theme_text_color: "Custom"
+    text_color: (.1, .1, .1, 1)
+
+<Profile@FloatLayout>:
+    canvas.before:
+        Ellipse:
+            source: "pip.png"
+            size: 50, 50
+            pos: self.pos
