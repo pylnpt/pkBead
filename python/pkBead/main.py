@@ -5,9 +5,11 @@ from kivy.metrics import dp
 from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.uix.screenmanager import ScreenManager, Screen
+
 from hover import HoverIconList
 
 Window.maximize()
+
 
 class Dashboard(Screen):
     def __init__(self, **kwargs):
@@ -71,7 +73,7 @@ class Dashboard(Screen):
 
 
 class Products(Screen):
-    Builder.load_file("./products.kv")
+    Builder.load_file("screens/products.kv")
 
 
 class MainApp(MDApp):
